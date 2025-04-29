@@ -9,6 +9,7 @@ export default defineConfig({
       entry: 'src/main.jsx', // Replace with the actual entry file of your project
       name: 'DemoProject',  
       format: 'umd',
+      fileName: (format) => `demo-project.${format}.js`, // Output file name
     },
     rollupOptions: {
       external: [
