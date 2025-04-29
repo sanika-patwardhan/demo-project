@@ -1,4 +1,4 @@
-(function(Ec,Vs){typeof exports=="object"&&typeof module<"u"?Vs(require("react"),require("react-dom")):typeof define=="function"&&define.amd?define(["react","react-dom"],Vs):(Ec=typeof globalThis<"u"?globalThis:Ec||self,Vs(Ec.require$$1,Ec.require$$2))})(this,function(Ec,Vs){"use strict";var um={exports:{}},fh={};/**
+(function(Ec,Vs){typeof exports=="object"&&typeof module<"u"?Vs(require("react"),require("react-dom")):typeof define=="function"&&define.amd?define(["react","react-dom"],Vs):(Ec=typeof globalThis<"u"?globalThis:Ec||self,Vs(Ec.React,Ec.ReactDOM))})(this,function(Ec,Vs){"use strict";var um={exports:{}},fh={};/**
  * @license React
  * react-jsx-runtime.production.js
  *
