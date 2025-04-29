@@ -5,6 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
+    lib: {
+      entry: 'src/main.jsx', // Replace with the actual entry file of your project
+      name: 'DemoProject',  
+      format: 'umd',
+    },
     rollupOptions: {
       external: [
         "react", 
