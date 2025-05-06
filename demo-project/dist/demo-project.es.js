@@ -10,15 +10,15 @@ var m = { exports: {} }, s = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var v = h, f = Symbol.for("react.element"), g = Symbol.for("react.fragment"), _ = Object.prototype.hasOwnProperty, j = v.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, w = { key: !0, ref: !0, __self: !0, __source: !0 };
+var v = h, g = Symbol.for("react.element"), f = Symbol.for("react.fragment"), _ = Object.prototype.hasOwnProperty, j = v.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, w = { key: !0, ref: !0, __self: !0, __source: !0 };
 function d(r, c, a) {
-  var t, o = {}, i = null, n = null;
-  a !== void 0 && (i = "" + a), c.key !== void 0 && (i = "" + c.key), c.ref !== void 0 && (n = c.ref);
+  var t, o = {}, n = null, i = null;
+  a !== void 0 && (n = "" + a), c.key !== void 0 && (n = "" + c.key), c.ref !== void 0 && (i = c.ref);
   for (t in c) _.call(c, t) && !w.hasOwnProperty(t) && (o[t] = c[t]);
   if (r && r.defaultProps) for (t in c = r.defaultProps, c) o[t] === void 0 && (o[t] = c[t]);
-  return { $$typeof: f, type: r, key: i, ref: n, props: o, _owner: j.current };
+  return { $$typeof: g, type: r, key: n, ref: i, props: o, _owner: j.current };
 }
-s.Fragment = g;
+s.Fragment = f;
 s.jsx = d;
 s.jsxs = d;
 m.exports = s;
@@ -48,5 +48,5 @@ function y() {
   ] });
 }
 window.mount = (r) => {
-  p(r).render(/* @__PURE__ */ e.jsx(y, {}));
+  console.log("hello"), p(r).render(/* @__PURE__ */ e.jsx(y, {}));
 };
